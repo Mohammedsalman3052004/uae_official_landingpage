@@ -40,7 +40,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="preload" as="image" href="./icons/hero-banner.webp">
+    <link rel="preload" as="image" href="./Images/banner.png">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.png" type="image/png">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -74,8 +74,13 @@
     <main id="top">
         <!-- HERO -->
         <section class="hero">
-            <div class="bg"><img src="./assets/images/newbanner1.jpg"
-                    alt="Teknix elevators and escalators in a modern building"></div>
+            <div class="bg">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./Images/mobi-banner.png">
+                    <img src="./Images/banner.png" alt="Teknix elevators and escalators in a modern building">
+                </picture>
+            </div>
+            </div>
             <div class="in">
                 <div class="eyebrow rv">Elevator Companies &amp; Suppliers in Dubai</div>
                 <h1 class="ln"><span class="mask"><span style="--i:0">Elevator that takes</span></span><span
@@ -130,17 +135,18 @@
                         aria-label="Next">→</button></div>
             </div>
             <div class="pgrid rv">
-                <div class="pimg"><img class="vimg" src="./assets/images/optim.webp" alt="OPTIMA" loading="lazy">
+                <div class="pimg"><img class="vimg" src="./Images/optima.png" alt="OPTIMA" loading="lazy">
                     <div class="tag">OPTIMA</div>
                 </div>
                 <div class="pinfo">
                     <ul class="tabs" role="tablist">
-                        <li role="tab" tabindex="0" data-i="0" data-img="./assets/images/optim.webp" class="on">OPTIMA
+                        <li role="tab" tabindex="0" data-i="0" data-img="./Images/optima.png" class="on">OPTIMA
                         </li>
-                        <li role="tab" tabindex="0" data-i="1" data-img="./assets/images/vertix.webp">VERTIX</li>
-                        <li role="tab" tabindex="0" data-i="2" data-img="./assets/images/GREENTEK.webp">GREENTEK</li>
-                        <li role="tab" tabindex="0" data-i="3" data-img="./assets/images/hydrotek.webp">HYDRATEK</li>
-                        <li role="tab" tabindex="0" data-i="4" data-img="./assets/images/villaelevator.webp">VILLA ELEVATOR</li>
+                        <li role="tab" tabindex="0" data-i="1" data-img="./Images/vertix.png">VERTIX</li>
+                        <li role="tab" tabindex="0" data-i="2" data-img="./Images/greentek.png">GREENTEK</li>
+                        <li role="tab" tabindex="0" data-i="3" data-img="./Images/hydratek.png">HYDRATEK</li>
+                        <li role="tab" tabindex="0" data-i="4" data-img="./Images/villa-matek.png">VILLA ELEVATOR</li>
+                        <li role="tab" tabindex="0" data-i="5" data-img="./Images/evo.png">EVO</li>
                     </ul>
                     <div class="pdesc">
                         <div class="pstack">
@@ -164,6 +170,12 @@
                                 are specially designed for residential use; incorporating a mix of technology,
                                 aesthetics and craftsmanship to provide an essential service to homes whose residents
                                 have impaired mobility.</div>
+                            <div class="pd">
+                                <span class="sub">Innovation meets effortless mobility.</span>
+                                Discover TEKNIX EVO, designed to deliver a smooth,
+                                comfortable and reliable vertical transportation
+                                experience with modern technology and refined design.
+                            </div>
                         </div>
                         <button class="btn wht open-form"><span class="l">Download Brochure</span><span
                                 class="ar l">→</span></button>
@@ -178,44 +190,52 @@
             <h2 class="t ln"><span class="mask"><span style="--i:0">Features</span></span></h2>
             <p class="lede rv">Exclusive features of Teknix Elevators that make them everyone’s first choice.</p>
             <div class="fgrid">
-                <div class="fc rv"><span class="ic"><img class="d" src="./assets/images/Spacious Car-1.webp" alt=""><img class="l"
-                            src="./assets/images/Spacious Car-1.webp" alt=""></span>
+                <div class="fc rv"><span class="ic"><img class="d" src="./assets/images/Spacious Car-1.webp" alt=""><img
+                            class="l" src="./assets/images/Spacious Car-1.webp" alt=""></span>
                     <h3>Spacious Car</h3>
                 </div>
-                <div class="fc rv" style="--d:0.05s"><span class="ic"><img class="d" src="./assets/images/Power Saver-1.webp"
-                            alt=""><img class="l" src="./assets/images/Power Saver-1.webp" alt=""></span>
+                <div class="fc rv" style="--d:0.05s"><span class="ic"><img class="d"
+                            src="./assets/images/Power Saver-1.webp" alt=""><img class="l"
+                            src="./assets/images/Power Saver-1.webp" alt=""></span>
                     <h3>Power Saver</h3>
                 </div>
-                <div class="fc rv" style="--d:0.1s"><span class="ic"><img class="d" src="./assets/images/Door Sensors.webp"
-                            alt=""><img class="l" src="./assets/images/Door Sensors.webp" alt=""></span>
+                <div class="fc rv" style="--d:0.1s"><span class="ic"><img class="d"
+                            src="./assets/images/Door Sensors.webp" alt=""><img class="l"
+                            src="./assets/images/Door Sensors.webp" alt=""></span>
                     <h3>Door Sensors</h3>
                 </div>
-                <div class="fc rv" style="--d:0.15s"><span class="ic"><img class="d" src="./assets/images/Smooth & Silent operations.webp"
-                            alt=""><img class="l" src="./assets/images/Smooth & Silent operations.webp" alt=""></span>
+                <div class="fc rv" style="--d:0.15s"><span class="ic"><img class="d"
+                            src="./assets/images/Smooth & Silent operations.webp" alt=""><img class="l"
+                            src="./assets/images/Smooth & Silent operations.webp" alt=""></span>
                     <h3>Smooth &amp; Silent operations</h3>
                 </div>
-                <div class="fc rv" style="--d:0.2s"><span class="ic"><img class="d" src="./assets/images/wide range.webp"
-                            alt=""><img class="l" src="./assets/images/wide range.webp" alt=""></span>
+                <div class="fc rv" style="--d:0.2s"><span class="ic"><img class="d"
+                            src="./assets/images/wide range.webp" alt=""><img class="l"
+                            src="./assets/images/wide range.webp" alt=""></span>
                     <h3>Wide Range</h3>
                 </div>
-                <div class="fc rv"><span class="ic"><img class="d" src="./assets/images/Anti Squeeze Door System.webp" alt=""><img class="l"
-                            src="./assets/images/Anti Squeeze Door System.webp" alt=""></span>
+                <div class="fc rv"><span class="ic"><img class="d" src="./assets/images/Anti Squeeze Door System.webp"
+                            alt=""><img class="l" src="./assets/images/Anti Squeeze Door System.webp" alt=""></span>
                     <h3>Anti Squeeze Door System</h3>
                 </div>
-                <div class="fc rv" style="--d:0.05s"><span class="ic"><img class="d" src="./assets/images/Light Curtains.webp"
-                            alt=""><img class="l" src="./assets/images/Light Curtains.webp" alt=""></span>
+                <div class="fc rv" style="--d:0.05s"><span class="ic"><img class="d"
+                            src="./assets/images/Light Curtains.webp" alt=""><img class="l"
+                            src="./assets/images/Light Curtains.webp" alt=""></span>
                     <h3>Light Curtains</h3>
                 </div>
-                <div class="fc rv" style="--d:0.1s"><span class="ic"><img class="d" src="./assets/images/Dual rescue disc brakes.webp"
-                            alt=""><img class="l" src="./assets/images/Dual rescue disc brakes.webp" alt=""></span>
+                <div class="fc rv" style="--d:0.1s"><span class="ic"><img class="d"
+                            src="./assets/images/Dual rescue disc brakes.webp" alt=""><img class="l"
+                            src="./assets/images/Dual rescue disc brakes.webp" alt=""></span>
                     <h3>Dual rescue disc brakes</h3>
                 </div>
-                <div class="fc rv" style="--d:0.15s"><span class="ic"><img class="d" src="./assets/images/Earthquake Protection System.webp"
-                            alt=""><img class="l" src="./assets/images/Earthquake Protection System.webp" alt=""></span>
+                <div class="fc rv" style="--d:0.15s"><span class="ic"><img class="d"
+                            src="./assets/images/Earthquake Protection System.webp" alt=""><img class="l"
+                            src="./assets/images/Earthquake Protection System.webp" alt=""></span>
                     <h3>Earthquake Protection System</h3>
                 </div>
-                <div class="fc rv" style="--d:0.2s"><span class="ic"><img class="d" src="./assets/images/Teknix rescue device.webp"
-                            alt=""><img class="l" src="./assets/images/Teknix rescue device.webp" alt=""></span>
+                <div class="fc rv" style="--d:0.2s"><span class="ic"><img class="d"
+                            src="./assets/images/Teknix rescue device.webp" alt=""><img class="l"
+                            src="./assets/images/Teknix rescue device.webp" alt=""></span>
                     <h3>Teknix rescue device</h3>
                 </div>
             </div>
@@ -271,7 +291,7 @@
                     <div><b>ISO</b><span>9001 Certified</span></div>
                 </div>
             </div>
-            <div class="im ri" data-ri><img src="./assets/images/villaelevator.webp" alt="People using Teknix elevators"
+            <div class="im ri" data-ri><img src="./Images/corp-profile.png" alt="People using Teknix elevators"
                     loading="lazy"></div>
         </section>
 
@@ -294,8 +314,7 @@
     <!-- FOOTER -->
     <footer class="foot">
         <div class="top">
-            <h2>For everything that matters.</h2><img src="./icons/footer-logo.png"
-                alt="Teknix Prime Lifts Trading Co. LLC">
+            <h2>For everything that matters.</h2><img src="./icons/logo.png" alt="Teknix Prime Lifts Trading Co. LLC">
         </div>
         <p class="disc">Disclaimer : any content mentioned on this website is for information purposes only and prices
             are subject to change without notice. this website is just for the purpose of information only and not to be

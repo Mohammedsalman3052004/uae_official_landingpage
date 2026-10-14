@@ -4,7 +4,7 @@
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
 
   /* ---------- CONFIG (same endpoint + field names as the original UAE page) ---------- */
-  var ENDPOINT = 'contact-process'; // same PHP handler as the original UAE page (replies "OK" on success)
+  var ENDPOINT = 'contact-process.php'; // same PHP handler as the original UAE page (replies "OK" on success)
   var THANK_YOU = 'thankyou.html';
 
   document.body.classList.remove('js-off');
